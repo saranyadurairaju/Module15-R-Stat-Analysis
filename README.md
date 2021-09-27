@@ -67,7 +67,7 @@ We will import and read the Suspension_Coil.csv file as a table. Then using RScr
 
 ![image](https://user-images.githubusercontent.com/85472349/134851723-98ca5994-bafc-4a37-8409-2deaeef01711.png)
 
-* The total_summary dataframe looks like below:
+* **The total_summary dataframe looks like below:**
 
 ![image](https://user-images.githubusercontent.com/85472349/134851596-6a4b95b8-7bd2-461a-9614-2c827e59aeb5.png)
 
@@ -75,7 +75,7 @@ We will import and read the Suspension_Coil.csv file as a table. Then using RScr
 
 ![image](https://user-images.githubusercontent.com/85472349/134851839-f8381a3c-bcda-4d4c-920a-70be91efc1ff.png)
 
-* The lot_summary dataframe looks like below:
+* **The lot_summary dataframe looks like below:**
 
 ![image](https://user-images.githubusercontent.com/85472349/134851965-d444e2f1-1d4d-4a67-b2e1-d8777a6b00ef.png)
 
@@ -149,4 +149,46 @@ From the above t-test Summary Statistics we can conclude the below points:
 
 
 ## Deliverable 4: Design a Study Comparing the MechaCar to the Competition
+
+In this section, we are going to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers. In this Study we are not performing any R testing, but we are doing a Statistical study that can quantify how the MechaCar performs against the competition. And the design has the below important studys:
+
+•	A metric to be tested
+
+•	A null hypothesis or an alternative hypothesis 
+
+•	A statistical test and Data to test the hypothesis
+
+
+### Metrics:
+
+The metrics fuel efficiency, cost, Resale Value and maybe color options are important interms of customer pespective. By handling all these metrics properly, MechaCar can  outperforms the competition.
+
+
+### Hypothesis:	
+
+
+After considering the key factors, we can go deep into Fuel efficiency & Cost.
+
+**Null Hypothesis (Ho):** The means of fuel efficiency (mpg) for all groups are equal.
+**Alternative Hypothesis (Ha):** At least one of the means is different from all other groups.
+
+**Null Hypothesis (Ho):** The cars are priced correctly based on its key factors. 
+**Alternative Hypothesis (Ha):** The cars are NOT priced correctly based on its key factors.
+
+
+### Statistical Test:
+
+We are analysing that the mpg of MechaCars is better than other competitors. 
+
+-> Hence we can use **ANOVA** tests to compare the means of a continuous numerical variable across a number of groups. A one-way ANOVA is used to test the means of a single dependent variable across a single independent variable with multiple groups (fuel efficiency(mpg) of different cars based on vehicle class). In addition to this we can use the ggplot2 library to show how the data are spread between different cars using a boxplot.
+
+-> To determine the highest correlation between the selling price and the other factors, we can use a **multiple linear regression**. So, we will come to know all of the combination of factors which has the greatest impact on price.
+
+
+### Data for Statistical Test:
+
+For conducting all of this test, we would need a data from different individual cars to create a sample size of data in each class. Also, our data has to collected from all class type randomly. So that we will have a perfect data which is normally distributed and have enough sample data which are randomly collected. 
+
+
+**So, Jeremy and the data analytics team has successfully reviewed the production data to help the manufacturing team and produced the report to management. AutosRUs’ upper management is very happy that this is going to help them improve their business! Success!!!** 
 
