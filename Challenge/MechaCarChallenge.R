@@ -47,7 +47,6 @@ t.test(lot1$PSI,mu=1500)
 t.test(lot2$PSI,mu=1500)
 t.test(lot3$PSI,mu=1500)
 
-# log10 was not used as the data was not skewed and did not need any smoothing
 
 ##Additional Analysis
 
@@ -58,11 +57,5 @@ plt1 + geom_boxplot() #add boxplot
 #box plot: PSI each individual Lot
 plt2 <- ggplot(suspnCoil_table,aes(x=Manufacturing_Lot,y=PSI)) #import dataset into ggplot2
 plt2 + geom_boxplot()
-
-
-#For (1) Eliminate the independent variables that have little impact on predicting mpg to see impact:
-lm(mpg ~ vehicle_length + ground_clearance, data=mechaCar_table)
-summary(lm(mpg ~ vehicle_length + ground_clearance, data=mechaCar_table)) 
-
 
 
